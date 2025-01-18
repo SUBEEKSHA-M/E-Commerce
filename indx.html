@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg"href="img/img/logo2.jpg">
+    <title>Subee E-commerce</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <nav>
+        <div class="Top">
+            <div class="Item">
+                <img src="img/img/shoe.jpg" width="80px" height="50px">
+            </div>
+            <div class="Item">
+                <div class="search">
+                    <input type="text" placeholder="Search.." class="searchInput">
+                    <img src="img/img/search.jpg" width="15px" height="15px"  alt="oh!no">
+                </div>
+            </div>
+            <div class="Item">
+                <span class="limitedOffer">Limited Offer!</span>
+            </div>
+        </div>
+        <div class="Bottom">
+            <h3 class="menuItem">MEN</h3>
+            <h3 class="menuItem">WOMEN</h3>
+            <h3 class="menuItem">KIDS</h3>
+            <h3 class="menuItem">FORMAL</h3>
+            <h3 class="menuItem">SPORTS</h3>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="img/img/men2.jpg" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">MEN <br> NEW SEASON</h1>
+                <h2 class="sliderPrice">Rs: 199</h2>
+                <button class="productButton" onclick="togglePayment()">BUY NOW!</button>
+            </div>
+            <div class="sliderItem">
+                <img src="img/img/girls1.jpg" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">MEN <br> NEW SEASON</h1>
+                <h2 class="sliderPrice">Rs: 449</h2>
+                <button class="productButton" onclick="togglePayment()">BUY NOW!</button>
+            </div>
+            <div class="sliderItem">
+                <img src="img/img/kids1.jpg" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">MEN <br> NEW SEASON</h1>
+                <h2 class="sliderPrice">Rs: 224</h2>
+                <button class="productButton" onclick="togglePayment()">BUY NOW!</button>
+            </div>
+            <div class="sliderItem">
+                <img src="img/img/formal1.jpg" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">MEN <br> NEW SEASON</h1>
+                <h2 class="sliderPrice">Rs: 299</h2>
+                <button class="productButton" onclick="togglePayment()">BUY NOW!</button>
+            </div>
+            <div class="sliderItem">
+                <img src="img/img/sport2.jpg" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">MEN <br> NEW SEASON</h1>
+                <h2 class="sliderPrice">Rs: 399</h2>
+                <button class="productButton" onclick="togglePayment()">BUY NOW!</button>
+            </div>
+        </div>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <img src="img/img/shipping.jpg" alt="" class="featureImg">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img src="img/img/return.jpg" alt="" class="featureImg">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc"> No questions return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img src="img/img/gift card.jpg" alt="" class="featureImg">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon code</span>
+        </div>
+        <div class="feature">
+            <img src="img/img/contact us.jpg" alt="" class="featureImg">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch. </span>
+        </div>
+    </div>
+    <div class="product">
+        <img src="img/img/men2.jpg" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">MEN</h1>
+            <h2 class="productPrice">Rs: 199</h2>
+            <p class="productDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, velit?</p>
+            <div class="colors">
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+            <div class="sizes">
+                <div class="size">42</div>
+                <div class="size">43</div>
+                <div class="size">44</div>
+            </div>
+            <button class="productButton" onclick="togglePayment()">BUY NOW!</button>
+        </div>
+    </div>
+    <div class="payment hidden">
+        <h1 class="payTitle">Personal Information</h1>
+        <label>Name and Surname</label>
+        <input type="text" placeholder="Subee" class="payInput" name="name">
+        <label>Email</label>
+        <input type="text" placeholder="@gmail.com" class="payInput" name="email">
+        <label>Phone Number</label>
+        <input type="text" placeholder="+1 234 5678" class="payInput" name="phone">
+        <label>Address</label>
+        <input type="text" placeholder="st 4 nagar" class="payInput" name="address">
+        <h1 class="payTitles">Card Information</h1>
+        <div class="CardIcons">
+            <img src="img/img/visa.jpg" width="40" alt="" class="cardIcon" name="cardNumber">
+        </div>
+        <input type="password" class="payInput" placeholder="Card Number">
+        <button class="payButton" onclick="handlePayment()">Pay!</button>
+    </div>
+    <div id="thankYouMessage" class="thankYouMessage hidden">
+        <h2>Thank you for Purchasing!</h2>
+    </div>
+    <footer>
+        <div class="footerContent">
+            <p><strong>Name:</strong> Subeeksha M</p>
+            <p><strong>Email:</strong> subee22it@gmail.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/subeeIT" target="_blank">LinkedIn Profile</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/SUBEEKSHA-M" target="_blank">GitHub Profile</a></p>
+        </div>
+    </footer>     
+    <script src="script.js"></script>
+</body>
+</html>
